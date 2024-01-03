@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 // Clone the Git repository
-                git 'https://github.com/Manav2626/Hello_World.git'
+                git 'https://github.com/Manav2626/Hello_World.git', branch: 'main'
             }
         }
 
@@ -13,6 +13,7 @@ pipeline {
             steps {
                 // Build your code (replace with your build commands)
                 sh 'echo "Building the code..."'
+                sh 'cd Hello_World'
                 sh 'docker build -t hello_app .'
             }
         }
