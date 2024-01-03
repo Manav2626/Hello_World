@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 // Clone the Git repository
-                git 'https://github.com/Manav2626/Hello_World.git', branch: 'main'
+                git url: 'https://github.com/Manav2626/Hello_World.git', branch: 'main'
             }
         }
 
