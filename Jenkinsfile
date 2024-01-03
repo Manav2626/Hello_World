@@ -13,7 +13,6 @@ pipeline {
             steps {
                 // Build your code (replace with your build commands)
                 sh 'echo "Building the code..."'
-                sh 'cd Hello_World'
                 sh 'docker build -t hello_app .'
             }
         }
